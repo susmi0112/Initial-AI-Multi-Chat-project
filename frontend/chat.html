@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Multi-Chat</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Background decoration -->
+    <div class="background-shape shape-one"></div>
+    <div class="background-shape shape-two"></div>
+    <div class="background-shape shape-three"></div>
+
+
+    <!-- MAIN APP -->
+    <div class="app-container">
+
+        <!-- ================= SIDEBAR ================= -->
+
+        <aside class="sidebar">
+
+            <div class="brand">
+                <div class="brand-icon">🤖</div>
+
+                <div>
+                    <h2>AI Multi-Chat</h2>
+                    <p>Friends + AI</p>
+                </div>
+            </div>
+
+
+            <!-- New Chat -->
+            <button class="new-chat-btn" onclick="newChat()">
+                <span>＋</span>
+                New Chat
+            </button>
+
+            <button class="new-chat-btn" onclick="createRoom()">
+                <span>＋</span>
+                Create Room
+            </button>
+
+            <button class="new-chat-btn" onclick="joinRoom()">
+                <span>＋</span>
+                Join Room
+            </button>
+
+
+            <!-- Group -->
+            <div class="sidebar-section">
+
+                <div class="section-title">
+                    <span>👥</span>
+                    YOUR GROUP
+                </div>
+
+                <div class="group-card" onclick="openCurrentRoom()">
+
+                    <div class="group-icon">
+                        👥
+                    </div>
+
+                    <div class="group-info">
+                        <h3>AI Multi-Chat</h3>
+                        <p>Shared conversation</p>
+                        <p id="current-room-id"></p>
+                    </div>
+
+                    <span class="online-dot"></span>
+
+                </div>
+
+            </div>
+
+
+            <!-- Members -->
+            <div class="sidebar-section">
+
+                <div class="section-title">
+                    CHAT MEMBERS
+                </div>
+
+                <div id="members-list">
+
+                <div class="member">
+
+                    <div class="member-avatar ai-avatar">
+                        🤖
+                    </div>
+
+                    <div class="member-info">
+                        <strong>AI Assistant</strong>
+                        <span>
+                            <i class="status-dot"></i>
+                            Online
+                        </span>
+                    </div>
+
+                </div>
+
+
+                <div class="member">
+
+                    <div class="member-avatar user-avatar">
+                        👤
+                    </div>
+
+                    <div class="member-info">
+                        <strong id="sidebar-username">
+                            User
+                        </strong>
+
+                        <span>
+                            <i class="status-dot"></i>
+                            Online
+                        </span>
+                    </div>
+
+                </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Sidebar bottom -->
+            <div class="sidebar-bottom">
+
+                <button
+                    class="sidebar-btn"
+                    onclick="openFeedback()">
+
+                    💬 Feedback
+
+                </button>
+
+                <button
+                    class="sidebar-btn logout-btn"
+                    onclick="logout()">
+
+                    ↪ Logout
+
+                </button>
+
+            </div>
+
+        </aside>
+
+
+        <!-- ================= CHAT AREA ================= -->
+
+        <main class="chat-area">
+
+
+            <!-- Chat Header -->
+
+            <header class="chat-header">
+
+                <div class="header-left">
+
+                    <div class="header-avatar">
+                        🤖
+                    </div>
+
+                    <div>
+
+                        <h1>AI Multi-Chat</h1>
+
+                        <p>
+                            <span class="green-dot"></span>
+                            Group conversation
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="header-right">
+
+                    <div class="connection-status">
+                        <span class="green-dot"></span>
+                        AI Online
+                    </div>
+
+                </div>
+
+            </header>
+
+
+            <!-- Welcome -->
+
+            <div class="welcome-bar">
+
+                <div class="welcome-avatar">
+                    👤
+                </div>
+
+                <div>
+
+                    <strong id="welcome">
+                        Logged in as: User
+                    </strong>
+
+                    <p>
+                        Everyone in this group can see the conversation.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================= MESSAGES ================= -->
+
+            <section
+                id="chat-box"
+                class="chat-box">
+
+                <!-- Messages will be inserted by chat.js -->
+
+                <div class="empty-chat">
+
+                    <div class="empty-icon">
+                        🤖
+                    </div>
+
+                    <h2>Welcome to AI Multi-Chat!</h2>
+
+                    <p>
+                        Chat with your friends and AI in one shared conversation.
+                    </p>
+
+                    <div class="suggestions">
+
+                        <button onclick="useSuggestion('What is Artificial Intelligence?')">
+                            💡 What is Artificial Intelligence?
+                        </button>
+
+                        <button onclick="useSuggestion('Explain Python')">
+                            🐍 Explain Python
+                        </button>
+
+                        <button onclick="useSuggestion('Give me a project idea')">
+                            🚀 Give me a project idea
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- ================= INPUT AREA ================= -->
+
+            <div class="input-area">
+
+                <div class="input-wrapper">
+
+                    <textarea
+                        id="user-message"
+                        placeholder="Message AI Multi-Chat..."
+                        rows="1"
+                        autocomplete="off"></textarea>
+
+                    <button
+                        id="send-button"
+                        class="send-btn"
+                        onclick="sendMessage()"
+                        title="Send message">
+
+                        ➤
+
+                    </button>
+
+                </div>
+
+
+                <div class="input-footer">
+
+                    <span>
+                        Press <b>Enter</b> to send
+                    </span>
+
+                    <span>
+                        🤖 AI is part of this conversation
+                    </span>
+
+                </div>
+
+            </div>
+
+
+        </main>
+
+    </div>
+
+
+    <!-- JavaScript -->
+
+    <script src="chat.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Feedback</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="auth-container">
+
+    <div class="auth-box">
+
+        <h1>💬 Feedback</h1>
+
+        <p>How was your experience?</p>
+
+        <textarea
+            id="feedback"
+            placeholder="Write your feedback..."
+            rows="6"
+            style="width:100%; padding:12px; margin-bottom:15px;"
+        ></textarea>
+
+        <button onclick="sendFeedback()">
+            Submit Feedback
+        </button>
+
+        <p id="feedback-message"></p>
+
+        <button onclick="backToChat()">
+            Back to Chat
+        </button>
+
+    </div>
+
+</div>
+
+<script src="feedback.js"></script>
+
+</body>
+
+</html>

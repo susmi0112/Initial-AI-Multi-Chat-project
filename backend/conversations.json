@@ -1,0 +1,146 @@
+{
+    "conversations": [
+        {
+            "id": "main",
+            "name": "AI Multi-Chat",
+            "members": [
+                "susmitha",
+                "susma",
+                "TestUser",
+                "AI Assistant",
+                "arun",
+                "87E0A2"
+            ],
+            "messages": [
+                {
+                    "sender": "TestUser",
+                    "message": "hi",
+                    "type": "user",
+                    "timestamp": "2026-08-31 20:02:32"
+                },
+                {
+                    "sender": "AI Assistant",
+                    "message": "Hello! How can I help you today?",
+                    "type": "ai",
+                    "timestamp": "2026-08-31 20:02:38"
+                },
+                {
+                    "sender": "TestUser",
+                    "message": "Hello",
+                    "type": "user",
+                    "timestamp": "2026-08-31 20:31:25"
+                },
+                {
+                    "sender": "AI Assistant",
+                    "message": "Hello! How can I help you today?",
+                    "type": "ai",
+                    "timestamp": "2026-08-31 20:31:31"
+                },
+                {
+                    "sender": "susmitha",
+                    "message": "what is data",
+                    "type": "user",
+                    "timestamp": "2026-08-31 20:39:03"
+                },
+                {
+                    "sender": "AI Assistant",
+                    "message": "Hello! **Data** is simply a collection of **facts, details, or information**. \n\nIt can take many different forms, such as:\n* **Numbers** (like your age, the temperature outside, or prices)\n* **Words** (like your name, text messages, or book titles)\n* **Media** (like photos, videos, or sound recordings)\n\nOn its own, data is just raw information. But when we organize it and process it, it helps us—and computers—learn new things, make decisions, and solve problems. \n\nIs there a specific kind of data you're curious about?",
+                    "type": "ai",
+                    "timestamp": "2026-08-31 20:39:10"
+                },
+                {
+                    "sender": "susma",
+                    "message": "what is database",
+                    "type": "user",
+                    "timestamp": "2026-08-31 20:40:08"
+                },
+                {
+                    "sender": "AI Assistant",
+                    "message": "A **database** is an organized collection of information (or data) stored electronically on a computer. \n\nThink of it like a **digital filing cabinet**. Instead of keeping paper files in physical folders, a computer stores information in a structured way so it is super fast and easy to search, update, add, or delete.\n\nHere are a few everyday examples of databases in action:\n* **Your Phone's Contacts:** A simple database that links names to phone numbers and emails.\n* **Netflix:** A huge database that stores movie titles, actors, genres, user accounts, and your watch history.\n* **Online Shopping:** Stores product lists, prices, stock levels, and customer order history.\n\nIn short, databases help apps, websites, and businesses remember important information so everything runs smoothly! \n\nWould you like to know more about how they work, or the different types of databases?",
+                    "type": "ai",
+                    "timestamp": "2026-08-31 20:40:15"
+                }
+            ]
+        }
+    ],
+    "rooms": [
+        {
+            "id": "39364A",
+            "name": "AI Multi-Chat Room",
+            "members": [
+                "directtest",
+                "joinertest"
+            ],
+            "messages": []
+        },
+        {
+            "id": "67D778",
+            "name": "AI Multi-Chat Room",
+            "members": [
+                "susmitha",
+                "susma"
+            ],
+            "messages": [
+                {
+                    "sender": "susmitha",
+                    "message": "room test",
+                    "type": "user",
+                    "timestamp": "2026-08-31 22:03:40"
+                },
+                {
+                    "sender": "AI Assistant",
+                    "message": "Test received! Everything is working loud and clear. \n\nHow can I help you today?",
+                    "type": "ai",
+                    "timestamp": "2026-08-31 22:03:57"
+                }
+            ]
+        },
+        {
+            "id": "2F0DBD",
+            "name": "AI Multi-Chat Room",
+            "members": [
+                "arun"
+            ],
+            "messages": []
+        },
+        {
+            "id": "9CC5AB",
+            "name": "AI Multi-Chat Room",
+            "members": [
+                "susmitha",
+                "susma"
+            ],
+            "messages": [
+                {
+                    "sender": "susma",
+                    "message": "HELLO",
+                    "type": "user",
+                    "timestamp": "2026-08-31 22:20:54"
+                },
+                {
+                    "sender": "AI Assistant",
+                    "message": "Hello! How can I help you today?",
+                    "type": "ai",
+                    "timestamp": "2026-08-31 22:21:09"
+                }
+            ]
+        },
+        {
+            "id": "AA5894",
+            "name": "AI Multi-Chat Room",
+            "members": [
+                "susmitha",
+                "susma",
+                "naveen",
+                "arun",
+                "user5",
+                "user6",
+                "user7",
+                "user8",
+                "user9",
+                "user10"
+            ],
+            "messages": []
+        }
+    ]
+}
