@@ -1,4 +1,4 @@
-const API_URL = "http://127.0.0.1:5000";
+const API_URL = "https://initial-ai-multi-chat-project.onrender.com";
 
 const username = localStorage.getItem("username");
 

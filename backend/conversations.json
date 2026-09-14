@@ -6,10 +6,7 @@
             "members": [
                 "susmitha",
                 "susma",
-                "TestUser",
-                "AI Assistant",
-                "arun",
-                "87E0A2"
+                "AI Assistant"
             ],
             "messages": [
                 {
@@ -59,6 +56,18 @@
                     "message": "A **database** is an organized collection of information (or data) stored electronically on a computer. \n\nThink of it like a **digital filing cabinet**. Instead of keeping paper files in physical folders, a computer stores information in a structured way so it is super fast and easy to search, update, add, or delete.\n\nHere are a few everyday examples of databases in action:\n* **Your Phone's Contacts:** A simple database that links names to phone numbers and emails.\n* **Netflix:** A huge database that stores movie titles, actors, genres, user accounts, and your watch history.\n* **Online Shopping:** Stores product lists, prices, stock levels, and customer order history.\n\nIn short, databases help apps, websites, and businesses remember important information so everything runs smoothly! \n\nWould you like to know more about how they work, or the different types of databases?",
                     "type": "ai",
                     "timestamp": "2026-08-31 20:40:15"
+                },
+                {
+                    "sender": "susmitha",
+                    "message": "what is data science",
+                    "type": "user",
+                    "timestamp": "2026-09-14 18:35:19"
+                },
+                {
+                    "sender": "AI Assistant",
+                    "message": "Hi there! \n\nThink of **Data Science** like being a detective, but instead of solving mysteries, you're finding hidden clues in information (data) to help solve problems and make smart decisions.\n\nIn simple terms, **data science is the practice of collecting, organizing, and analyzing large amounts of information to find useful patterns.**\n\nHere is a quick look at how it works:\n\n1. **Gathering Clues (Collecting Data):** Collecting information from different sources, like website clicks, sales records, or weather sensors.\n2. **Cleaning Up:** Organizing that information so it's easy to read and removing any mistakes.\n3. **Finding Patterns (Analyzing):** Using math, statistics, and computer programs (like Artificial Intelligence) to see what the numbers are telling us.\n4. **Making Predictions:** Using those patterns to guess what might happen in the future.\n\n**Real-world examples you might recognize:**\n* **Streaming Services:** When Netflix or Spotify recommends a movie or song you end up loving, that’s data science at work!\n* **Maps & Navigation:** Apps like Google Maps use data science to analyze traffic and find the fastest route for you.\n* **Shopping:** Online stores use it to suggest products you might want to buy based on what other people bought.\n\nIn short, data science takes raw numbers and turns them into helpful knowledge! \n\nDoes that make sense, or would you like to know more about a specific part of it?",
+                    "type": "ai",
+                    "timestamp": "2026-09-14 18:35:26"
                 }
             ]
         }
@@ -139,6 +148,15 @@
                 "user8",
                 "user9",
                 "user10"
+            ],
+            "messages": []
+        },
+        {
+            "id": "9C159E",
+            "name": "AI Multi-Chat Room",
+            "members": [
+                "AI Assistant",
+                "susmitha"
             ],
             "messages": []
         }
